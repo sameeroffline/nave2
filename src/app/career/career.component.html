@@ -1,0 +1,45 @@
+
+<div class="full">
+
+    <div class="fname">
+
+      <div class="hed">Register Form <br><br></div>
+
+        <label for="text">Firstname &nbsp;</label>
+        <input type="text" placeholder="First Name" [(ngModel)]="getfname"> &nbsp;&nbsp;
+ 
+    <label for="text">Lastname &nbsp;</label>
+      <input type="text" placeholder="Last Name" [(ngModel)]="getlname">
+  </div><br>
+
+  <div class="dob">
+    <label for="Date">Dob &nbsp;</label>
+      <input type="date" placeholder="Date of Birth" [(ngModel)]="getdob"> 
+      <div class="email">
+    <label for="text">Email &nbsp;</label>
+    <input type="text" placeholder="email" [(ngModel)]="getemail">
+  </div></div><br>
+
+  <div class="mobile">
+    <label for="Number">Mobile Number &nbsp;</label>
+      <input type="text" placeholder="Mobile Number" [(ngModel)]="getmobile"> 
+    <label for="Add">Address &nbsp;</label>
+      <input type="text" placeholder="Address" [(ngModel)]="getaddress">
+</div><br>
+
+  <div class="btn">
+    <button [style]="css" (click)="cancle()">cancel</button>  &nbsp;&nbsp;
+    <button [style]="css" (click)="changename()">submit</button>
+  </div>
+
+  
+
+<p>{{first}}</p>
+<p>{{last}}</p>
+<p>{{dob}}</p>
+<p>{{email}}</p>
+<p>{{mobile}}</p>
+<p>{{address}}</p>
+</div>
+
+
